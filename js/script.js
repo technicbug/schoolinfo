@@ -610,7 +610,10 @@ function showList(val = '', clear = false){
 
         })  
         if(ifdo==false && clear == false){
-            list.innerHTML = `<h3>"${val}" 에 대한 검색결과가 없습니다</h3>`
+            list.innerHTML = `<h3>"${val}" 에 대한 검색결과가 없습니다</h3>
+              <p>반 검색시 (학년)-(반) 으로 검색해 주세요. ex) 2학년 3반 (X), 2-3 (O)</p>
+            `
+
         }
         detail('','','',true)
     }
