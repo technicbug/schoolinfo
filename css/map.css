@@ -1,0 +1,135 @@
+/* styles.css */
+
+/* 전체 페이지 스타일 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* 헤더 스타일 */
+header {
+    background-color: #fff;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 로고 스타일 */
+header img {
+    width: 150px;
+    height: auto;
+}
+
+/* 네비게이션 스타일 */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 40px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 130%;
+}
+
+/* 푸터 스타일 */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* 푸터 링크 스타일 */
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* 푸터 링크 호버 스타일 */
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* 메인 */
+
+/* 메인 스타일 */
+main {
+    padding: 20px;
+    padding-bottom: 100px;
+    text-align: center;
+    justify-content: center;
+}
+
+/* h1 스타일 */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* 검색 입력란 스타일 */
+#search {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc; /* 테두리 스타일 */
+    border-radius: 5px; /* 둥근 테두리 */
+    /* margin-left: 3%;  */
+    width: 15%;
+}
+
+/* 검색 버튼 스타일 */
+#searchButton {
+    background-color: #0078D4;
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    cursor: pointer;
+    border-radius: 5px; /* 둥근 테두리 */
+    width: 70px;
+} 
+
+ul#list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 한 줄에 두 개의 열로 설정 */
+    grid-gap: 20px; /* 아이템 간격 설정 */
+}
+
+/* 리스트 아이템 스타일 */
+ul#list li {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 10px;
+    text-align: center;
+}
+
+ul#list li img {
+    width: 80%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+ul#list li p {
+    margin: 5px 0;
+}
