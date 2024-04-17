@@ -592,7 +592,12 @@ function showList(val = '', clear = false){
         let ifdo = false;
         list.innerHTML = '';
         const res = maps.forEach(function(map) {
-            if(map.name.includes(val) || map.loc.includes(val)){
+
+            let search_val = val.replace(' ', '');
+            search_val = search_val.replace('학년', '-');
+            search_val = search_val.replace('반', '')
+
+            if(map.name.includes(search_val) || map.loc.includes(search_val)){
                 const li = document.createElement('li');
                 // const maparr = [map.id, map.name, map.loc, map.locNum]
                 // console.log(maparr)
